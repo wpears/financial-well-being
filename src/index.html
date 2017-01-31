@@ -36,6 +36,8 @@
 
 <!--[if lt IE 9]>      <link rel="stylesheet" href="static/css/main.ie.min.css"> <![endif]-->
 <!--[if gt IE 8]><!--> <link rel="stylesheet" href="static/css/main.min.css"> <!--<![endif]-->
+<link rel="stylesheet" href="static/css/on-demand/header.css">
+<link rel="stylesheet" href="static/css/on-demand/footer.css">
 
 <!--
     ============
@@ -67,409 +69,560 @@
     =================
 -->
 
-<header class="wrapper wrapper__match-content" role="banner">
-    <div class="block block__sub">
-        <h1>Capital Framework demo page</h1>
+<header class="o-header"
+    role="banner">
+    <div class="m-global-eyebrow
+        m-global-eyebrow__horizontal">
+        <div class="wrapper
+            wrapper__match-content">
+            <div class="m-global-eyebrow_tagline">
+                An official website of the
+                <span class="m-global-eyebrow_tagline-usa">United States Government</span>
+            </div>
+            <div class="m-global-eyebrow_actions">
+                <ul class="list__unstyled
+                    list__horizontal
+                    m-global-eyebrow_languages">
+                    <li class="list_item">
+                        <a href="/es/" hreflang="es" lang="es">
+                        Español
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/zh/" hreflang="zh" lang="zh">
+                        中文
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/vi/" hreflang="vi" lang="vi">
+                        Tiếng Việt
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/ko/" hreflang="ko" lang="ko">
+                        한국어
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/tl/" hreflang="tl" lang="tl">
+                        Tagalog
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/ru/" hreflang="ru" lang="ru">
+                        Pусский
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/ar/" hreflang="ar" lang="ar">
+                        العربية
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a href="/language/ht/" hreflang="ht" lang="ht">
+                        Kreyòl Ayisyen
+                        </a>
+                    </li>
+                </ul>
+                <span class="m-global-eyebrow_phone">
+                (855) 411-2372
+                </span>
+            </div>
+        </div>
     </div>
+    <div class="o-header_content no-js">
+        <div class="wrapper wrapper__match-content">
+            <div class="m-global-header-cta
+                m-global-header-cta__horizontal">
+                <a href="/complaint/">Submit a Complaint</a>
+            </div>
+            <div class="m-global-search"
+                data-js-hook="behavior_flyout-menu">
+                <button class="m-global-search_trigger"
+                    data-js-hook="behavior_flyout-menu_trigger">
+                <span class="m-global-search_trigger-label">
+                <span class="u-visually-hidden">Search</span>
+                </span>
+                </button>
+                <div class="m-global-search_content
+                    u-hidden"
+                    data-js-hook="behavior_flyout-menu_content"
+                    aria-expanded="false">
+                    <form class="m-global-search_content-form"
+                        action="https://search.consumerfinance.gov/search"
+                        method="get">
+                        <input type="hidden"
+                            name="utf8"
+                            value="✓">
+                        <input type="hidden"
+                            id="affiliate"
+                            name="affiliate"
+                            value="cfpb">
+                        <div class="input-with-btn">
+                            <div class="input-with-btn_input
+                                input-contains-label">
+                                <label for="query"
+                                    class="input-contains-label_before
+                                    input-contains-label_before__search">
+                                </label>
+                                <label for="query"
+                                    class="input-contains-label_after
+                                    input-contains-label_after__clear
+                                    u-hidden">
+                                </label>
+                                <input type="text"
+                                    id="query"
+                                    name="query"
+                                    value=""
+                                    placeholder="Search the CFPB">
+                            </div>
+                            <div class="input-with-btn_btn">
+                                <button class="btn" type="submit">Search</button>
+                            </div>
+                        </div>
+                        <div class="m-global-search_content-suggestions">
+                            <p class="h5">Suggested search terms:</p>
+                            <ul class="list list__horizontal">
+                                <li class="list_item">
+                                    <a class="list_link" href="https://search.consumerfinance.gov/search?utf8=%E2%9C%93&affiliate=cfpb&query=regulations">
+                                    Regulations
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a class="list_link" href="https://search.consumerfinance.gov/search?utf8=%E2%9C%93&affiliate=cfpb&query=compliance+guides">
+                                    Compliance guides
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a class="list_link" href="https://search.consumerfinance.gov/search?utf8=%E2%9C%93&affiliate=cfpb&query=mortgage">
+                                    Mortgage
+                                    </a>
+                                </li>
+                                <li class="list_item">
+                                    <a class="list_link" href="https://search.consumerfinance.gov/search?utf8=%E2%9C%93&affiliate=cfpb&query=college+loans">
+                                    College loans
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                    <button class="m-global-search_tab-trigger" aria-hidden="true"></button>
+                </div>
+            </div>
+            <a class="o-header_logo" href="/">
+                <!--[if lt IE 9]>
+                <img class="o-header_logo-img"
+                    src="static/img/logo_sm-exec.png"
+                    alt="Consumer Financial Protection Bureau"
+                    width="237"
+                    height="50">
+                <![endif]-->
+                <!--[if gt IE 8]><!-->
+                <img class="o-header_logo-img u-js-only"
+                    src="static/img/logo_sm-exec.svg"
+                    onerror="this.onerror=null;this.src='static/img/logo_sm-exec.png';"
+                    alt="Consumer Financial Protection Bureau"
+                    width="237"
+                    height="50">
+                <noscript>
+                    <img class="o-header_logo-img"
+                        src="static/img/logo_sm-exec.png"
+                        alt="Consumer Financial Protection Bureau"
+                        width="237"
+                        height="50">
+                </noscript>
+                <!--<![endif]-->
+            </a>
+            <nav class="o-mega-menu"
+                data-js-hook="behavior_flyout-menu"
+                aria-label="main navigation"
+                role="navigation">
+                <button class="o-mega-menu_trigger"
+                    data-js-hook="behavior_flyout-menu_trigger"
+                    aria-pressed="false">
+                <span class="u-visually-hidden">Menu</span>
+                </button>
+                <div class="o-mega-menu_content o-mega-menu_content-1
+                    u-hidden-overflow"
+                    aria-expanded="false"
+                    data-js-hook="behavior_flyout-menu_content">
+                    <div class="o-mega-menu_content-wrapper o-mega-menu_content-1-wrapper">
+                        <div class="o-mega-menu_content-grid o-mega-menu_content-1-grid">
+                            <div class="o-mega-menu_content-lists o-mega-menu_content-1-lists">
+                                <ul class="list
+                                    list__unstyled
+                                    o-mega-menu_content-list o-mega-menu_content-1-list">
+                                    <li class="list_item
+                                        o-mega-menu_content-item o-mega-menu_content-1-item">
+                                        <div class="m-global-header-cta
+                                            m-global-header-cta__list">
+                                            <a href="/complaint/">Submit a Complaint</a>
+                                        </div>
+                                    </li>
+                                    <li class="list_item
+                                        o-mega-menu_content-item o-mega-menu_content-1-item"
+                                        data-js-hook=behavior_flyout-menu>
+                                        <a class="
+                                            o-mega-menu_content-link o-mega-menu_content-1-link
+                                            o-mega-menu_content-link__has-children o-mega-menu_content-1-link__has-children
+                                            "
+                                            href=#
+                                            data-js-hook=behavior_flyout-menu_trigger
+                                            aria-pressed=false>
+                                        Consumer Tools
+                                        </a>
+                                    </li>
+                                    <li class="list_item
+                                        o-mega-menu_content-item o-mega-menu_content-1-item"
+                                        data-js-hook=behavior_flyout-menu>
+                                        <a class="
+                                            o-mega-menu_content-link o-mega-menu_content-1-link
+                                            o-mega-menu_content-link__has-children o-mega-menu_content-1-link__has-children
+                                            "
+                                            href=#
+                                            data-js-hook=behavior_flyout-menu_trigger
+                                            aria-pressed=false>
+                                        Educational Resources
+                                        </a>
+                                    </li>
+                                    <li class="list_item
+                                        o-mega-menu_content-item o-mega-menu_content-1-item"
+                                        data-js-hook=behavior_flyout-menu>
+                                        <a class="
+                                            o-mega-menu_content-link o-mega-menu_content-1-link
+                                            o-mega-menu_content-link__has-children o-mega-menu_content-1-link__has-children
+                                            "
+                                            href=/data-research/
+                                            data-js-hook=behavior_flyout-menu_trigger
+                                            aria-pressed=false>
+                                        Data &amp; Research
+                                        </a>
+                                    </li>
+                                    <li class="list_item
+                                        o-mega-menu_content-item o-mega-menu_content-1-item"
+                                        data-js-hook=behavior_flyout-menu>
+                                        <a class="
+                                            o-mega-menu_content-link o-mega-menu_content-1-link
+                                            o-mega-menu_content-link__has-children o-mega-menu_content-1-link__has-children
+                                            "
+                                            href=/policy-compliance/
+                                            data-js-hook=behavior_flyout-menu_trigger
+                                            aria-pressed=false>
+                                        Policy &amp; Compliance
+                                        </a>
+                                    </li>
+                                    <li class="list_item
+                                        o-mega-menu_content-item o-mega-menu_content-1-item"
+                                        data-js-hook=behavior_flyout-menu>
+                                        <a class="
+                                            o-mega-menu_content-link o-mega-menu_content-1-link
+                                            o-mega-menu_content-link__has-children o-mega-menu_content-1-link__has-children
+                                            "
+                                            href=/about-us/
+                                            data-js-hook=behavior_flyout-menu_trigger
+                                            aria-pressed=false>
+                                        About Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-global-eyebrow
+                        m-global-eyebrow__list">
+                        <div class="wrapper
+                            ">
+                            <div class="m-global-eyebrow_tagline">
+                                An official website of the
+                                <span class="m-global-eyebrow_tagline-usa">United States Government</span>
+                            </div>
+                            <div class="m-global-eyebrow_actions">
+                                <ul class="list__unstyled
+                                    list__horizontal
+                                    m-global-eyebrow_languages">
+                                    <li class="list_item">
+                                        <a href="/es/" hreflang="es" lang="es">
+                                        Español
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/zh/" hreflang="zh" lang="zh">
+                                        中文
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/vi/" hreflang="vi" lang="vi">
+                                        Tiếng Việt
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/ko/" hreflang="ko" lang="ko">
+                                        한국어
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/tl/" hreflang="tl" lang="tl">
+                                        Tagalog
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/ru/" hreflang="ru" lang="ru">
+                                        Pусский
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/ar/" hreflang="ar" lang="ar">
+                                        العربية
+                                        </a>
+                                    </li>
+                                    <li class="list_item">
+                                        <a href="/language/ht/" hreflang="ht" lang="ht">
+                                        Kreyòl Ayisyen
+                                        </a>
+                                    </li>
+                                </ul>
+                                <span class="m-global-eyebrow_phone">
+                                (855) 411-2372
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="o-mega-menu_tab-trigger" aria-hidden="true"></button>
+            </nav>
+        </div>
+    </div>
+    <!--[if gt IE 8]><!-->
+    <script>
+        /* TODO: scope no-js to individual molecules/organisms. This is a hack to fix no-js on the on-demand header, while also allowing the menu to be scoped to o-header for on-demand pages. */
+        var headerDom = document.querySelector( '.o-header_content' );
+        headerDom.className = headerDom.className.replace( 'no-js', 'js' );
+    </script>
+    <!--<![endif]-->
 </header>
 
-<main class="content" id="main" role="main">
-    <div class="content_bar"></div>
-    <div class="content_wrapper">
-        <div class="content_main">
-            <div class="feature-list">
+<footer class="o-footer" role="contentinfo">
+    <div class="wrapper wrapper__match-content">
 
-                <p class="block u-mt0 intro-message">
-                    This demo page contains a small sample from each component.
-                    Refer to the docs for the full set of patterns.
-                </p>
+        <div class="o-footer_pre">
 
-                <section class="feature-list_item block">
+            <a class="btn
+                      btn__secondary
+                      o-footer_top-button"
+                data-gtm_ignore="true"
+                data-js-hook="behavior_return-to-top"
+                href="#">
+                Back to top <span class="cf-icon cf-icon-arrow-up"></span>
+            </a>
 
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Core</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-core/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
+            <ul class="o-footer_nav-list">
+                <li class="list_item">
+                    <a class="list_link" href="/about-us/contact-us/">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="/about-us/newsroom/">
+                        Newsroom
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="/about-us/careers/">
+                        Careers
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="/cfpb-ombudsman/">
+                        CFPB Ombudsman
+                    </a>
+                </li>
+            </ul>
+            <div class="block
+                        block__flush-top
+                        block__flush-bottom
+                        block__padded-top">
 
-                    <div class="block block__sub u-mt0">
-                        <h2>Colors</h2>
-                        <p>
-                            <span class="color-demo color-demo__btn-bg"></span>
-                            <span class="color-demo color-demo__btn-secondary-bg"></span>
-                            <span class="color-demo color-demo__btn-disabled-bg"></span>
-                        </p>
-                    </div>
 
-                    <div class="block block__sub">
-                        <h2>Typography base styles</h2>
-                        <div class="typography-demo">
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">Superheader</h3>
-                                    <div class="spec">
-                                        Avenir Next Demi<br>
-                                        48px / 66px
-                                    </div>
-                                </div>
-                                <h1 class="superheader">Getting out of debt</h1>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">H1</h3>
-                                    <div class="spec">
-                                        Avenir Next Regular<br>
-                                        34px / 44px
-                                    </div>
-                                </div>
-                                <h1>Getting out of debt</h1>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">H2</h3>
-                                    <div class="spec">
-                                        Avenir Next Regular<br>
-                                        26px / 33px
-                                    </div>
-                                </div>
-                                <h2>Getting out of debt</h2>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">H3</h3>
-                                    <div class="spec">
-                                        Avenir Next Regular<br>
-                                        22px / 28px
-                                    </div>
-                                </div>
-                                <h3>Getting out of debt</h3>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">H4</h3>
-                                    <div class="spec">
-                                        Avenir Next Medium<br>
-                                        18px / 22px
-                                    </div>
-                                </div>
-                                <h4>Getting out of debt</h4>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">H5</h3>
-                                    <div class="spec">
-                                        Avenir Next Demi<br>
-                                        14px / 22px<br>
-                                        uppercase<br>
-                                        letter-spacing: 1px
-                                    </div>
-                                </div>
-                                <h5>Getting out of debt</h5>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">H6</h3>
-                                    <div class="spec">
-                                        Avenir Next Demi<br>
-                                        12px / 22px<br>
-                                        uppercase<br>
-                                        letter-spacing: 1px
-                                    </div>
-                                </div>
-                                <h6>Getting out of debt</h6>
-                            </div>
-                            <div class="block block__sub typography-demo_item">
-                                <div class="typography-demo_item-header">
-                                    <h3 class="h5">Body</h3>
-                                    <div class="spec">
-                                        Georgia<br>
-                                        16px / 22px<br>
-                                    </div>
-                                </div>
-                                <p>
-                                    Use this tool to compare school data and relevant financial factors to
-                                    make a more informed decision for your future.
-                                </p>
-                            </div>
-                        </div><!-- END .block.block__sub -->
-                    </div><!-- END .typography-demo -->
 
-                    <div class="block block__sub">
-                        <h2>Input base styles</h2>
-                        <form action="#">
-                            <p><input placeholder="placeholder text" type="text"></p>
-                            <p><textarea>Example entry</textarea></p>
-                        </form>
-                    </div>
 
-                </section>
 
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Buttons</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-buttons/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <p><a href="#" class="btn">Link Button</a> <button class="btn">Form Button</button></p>
-                </section>
 
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Expandables</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-expandables/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <div class="expandable expandable__padded">
-                        <a class="expandable_target expandable_header"
-                           href="#expandable-padded-content">
-                            <span class="expandable_label expandable_header-left">
-                                Expandable Header
-                            </span>
-                            <span class="expandable_link expandable_header-right">
-                                <span class="expandable_cue-open">
-                                    Show
-                                    <span class="cf-icon cf-icon-plus-round"></span>
-                                </span>
-                                <span class="expandable_cue-close">
-                                    Hide
-                                    <span class="cf-icon cf-icon-minus-round"></span>
-                                </span>
-                            </span>
+
+
+
+
+
+
+<div class="m-social-media
+            m-social-media__follow">
+
+
+    <ul class="list
+               list__unstyled
+               list__horizontal
+               m-social-media_icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <li class="list_item">
+                    <a class="m-social-media_icon"
+                       href="/external-site/?ext_url=https%3A%2F%2Ffacebook.com%2Fcfpb">
+                        <span class="cf-icon cf-icon-facebook-square"></span>
+                        <span class="u-visually-hidden">Visit us on Facebook</span>
+                    </a>
+                </li>
+
+
+
+                <li class="list_item">
+                    <a class="m-social-media_icon"
+                       href="/external-site/?ext_url=https%3A%2F%2Ftwitter.com%2Fcfpb">
+                        <span class="cf-icon cf-icon-twitter-square"></span>
+                        <span class="u-visually-hidden">Visit us on Twitter</span>
+                    </a>
+                </li>
+
+
+
+                <li class="list_item">
+                    <a class="m-social-media_icon"
+                       href="/external-site/?ext_url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fconsumer-financial-protection-bureau">
+                        <span class="cf-icon cf-icon-linkedin-square"></span>
+                        <span class="u-visually-hidden">Visit us on LinkedIn</span>
+                    </a>
+                </li>
+
+
+
+                <li class="list_item">
+                    <a class="m-social-media_icon"
+                       href="/external-site/?ext_url=https%3A%2F%2Fwww.youtube.com%2Fuser%2Fcfpbvideo">
+                        <span class="cf-icon cf-icon-youtube-square"></span>
+                        <span class="u-visually-hidden">Visit us on YouTube</span>
+                    </a>
+                </li>
+
+
+
+                <li class="list_item">
+                    <a class="m-social-media_icon"
+                       href="/external-site/?ext_url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fcfpbphotos">
+                        <span class="cf-icon cf-icon-flickr-square"></span>
+                        <span class="u-visually-hidden">Visit us on Flickr</span>
+                    </a>
+                </li>
+
+
+
+    </ul>
+</div>
+
+            </div>
+        </div>
+
+        <div class="o-footer-middle-left">
+
+            <div class="o-footer_col">
+                <ul class="o-footer_list">
+                    <li class="list_item">
+                        <a class="list_link" href="/foia-requests/">
+                            FOIA
                         </a>
-                        <div class="expandable_content" id="expandable-padded-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Neque ipsa voluptatibus soluta nobis unde quisquam
-                                temporibus magnam debitis quidem. Ducimus ratione
-                                corporis nesciunt earum vel est quaerat blanditiis
-                                dolore ipsa?
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Forms</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-forms/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <div class="input-with-btn">
-                        <div class="input-with-btn_input">
-                            <input type="text">
-                        </div>
-                        <div class="input-with-btn_btn">
-                            <button class="btn">Search</button>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Grid</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-grid/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <div class="sample-grid">
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-1"></div>
-                        <div class="sample-grid_col sample-grid_col-6"></div>
-                        <div class="sample-grid_col sample-grid_col-6"></div>
-                        <div class="sample-grid_col sample-grid_col-4"></div>
-                        <div class="sample-grid_col sample-grid_col-4"></div>
-                        <div class="sample-grid_col sample-grid_col-4"></div>
-                        <div class="sample-grid_col sample-grid_col-3"></div>
-                        <div class="sample-grid_col sample-grid_col-3"></div>
-                        <div class="sample-grid_col sample-grid_col-3"></div>
-                        <div class="sample-grid_col sample-grid_col-3"></div>
-                    </div>
-                    <br>
-                </section>
-
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Icons</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-layout/docs/">
-                           <span class="cf-icon cf-icon-icons"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <div>
-                        <span class="cf-icon cf-icon-approved"></span>
-                        <span class="cf-icon cf-icon-approved-round"></span>
-                        <span class="cf-icon cf-icon-error"></span>
-                        <span class="cf-icon cf-icon-error-round"></span>
-                        <span class="cf-icon cf-icon-help"></span>
-                        <span class="cf-icon cf-icon-help-round"></span>
-                        <span class="cf-icon cf-icon-delete"></span>
-                        <span class="cf-icon cf-icon-delete-round"></span>
-                        <span class="cf-icon cf-icon-plus"></span>
-                        <span class="cf-icon cf-icon-plus-round"></span>
-                        <span class="cf-icon cf-icon-minus"></span>
-                        <span class="cf-icon cf-icon-minus-round"></span>
-                        <span class="cf-icon cf-icon-update"></span>
-                        <span class="cf-icon cf-icon-update-round"></span>
-                    </div>
-                </section>
-
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Layout</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-layout/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <main class="content content__2-1" id="main" role="main">
-                        <div class="content_bar"></div>
-                        <div class="content_wrapper">
-                            <section class="content_main">
-                                <h2>Main content area</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Cum corrupti tempora nam nihil qui mollitia consectetur
-                                    corporis nemo culpa dolorum! Laborum at eos deleniti
-                                    consequatur itaque officiis debitis quisquam! Provident!
-                                </p>
-                            </section>
-                            <aside class="content_sidebar" style="background: #F1F2F2">
-                                Sidebar
-                            </aside>
-                        </div>
-                    </main>
-                </section>
-
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Pagination</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-pagination/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <nav class="pagination">
-                        <a class="btn btn__super pagination_prev" href="#pagination_content">
-                            <span class="btn_icon__left cf-icon cf-icon-left"></span>
-                            Previous
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link" href="/plain-writing/">
+                            Plain Writing
                         </a>
-                        <a class="btn btn__super pagination_next" href="#pagination_content">
-                            Next
-                            <span class="btn_icon__right cf-icon cf-icon-right"></span>
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link" href="/privacy/">
+                            Privacy
                         </a>
-                        <form class="pagination_form" action="index.html#pagination_content">
-                            <label class="pagination_label"
-                                   for="pagination_current-page">
-                                Page
-                                <span class="u-visually-hidden">
-                                    number out of 149 total pages
-                                </span>
-                            </label>
-                            <input
-                                class="pagination_current-page"
-                                id="pagination_current-page"
-                                name="pagination_current-page"
-                                type="number" min="1" max="149"
-                                value="149">
-                            <span class="pagination_label">
-                                <span aria-hidden="true">
-                                    of 149
-                                </span>
-                            </span>
-                            <button class="btn btn__link pagination_submit"
-                                    id="pagination_submit"
-                                    type="submit">
-                                Go
-                            </button>
-                        </form>
-                    </nav>
-                    <br>
-                </section>
-
-                <section class="feature-list_item block block__padded-top block__border-top">
-                    <div class="feature-header">
-                        <h1 class="feature-header_name">CF-Typography</h1>
-                        <a class="feature-header_docs"
-                           href="https://cfpb.github.io/cf-typography/docs/">
-                           <span class="cf-icon cf-icon-document"></span>
-                           Docs
-                       </a>
-                    </div>
-                    <aside class="pull-quote">
-                        <div class="pull-quote_body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Cum corrupti tempora nam nihil qui mollitia consectetur
-                            corporis nemo culpa dolorum!
-                        </div>
-                        <footer>
-                            <cite class="pull-quote_citation">
-                                - Author Name
-                            </cite>
-                        </footer>
-                    </aside>
-                    <br>
-                    <h2 class="header-slug">
-                        <span class="header-slug_inner">
-                            Blog summary
-                        </span>
-                    </h2>
-                    <h2 class="fancy-slug">
-                        <span class="fancy-slug_text">
-                            <span class="fancy-slug_ribbon-left"></span>
-                            Watchroom
-                            <span class="fancy-slug_ribbon-right"></span>
-                        </span>
-                    </h2>
-                    <div class="meta-header">
-                        <span class="meta-header_right date">
-                            Nov 4, 2013
-                        </span>
-                        <a href="#" class="meta-header_left category-slug">
-                            <span class="cf-icon cf-icon-credit-card"></span>
-                            Consumer finance
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link"
+                           href="/privacy/website-privacy-policy/">
+                            Website Privacy Policy & Legal Notices
                         </a>
-                    </div>
-                    <ul class="list__branded">
-                        <li class="list_item">First item</li>
-                        <li class="list_item">Second item</li>
-                        <li class="list_item">Third item</li>
-                    </ul>
-                </section>
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link" href="/open-government/">
+                            Open Government
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="o-footer_col">
+                <ul class="o-footer_list">
+                    <li class="list_item">
+                        <a class="list_link" href="/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link" href="/office-civil-rights/">
+                            Office of Civil Rights
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link" href="/office-civil-rights/no-fear-act/">
+                            No FEAR Act Data
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link" href="/tribal/">
+                            Tribal
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-            </div><!-- END .feature-list -->
-        </div><!-- END .content_main -->
+        <div class="o-footer-middle-right">
+                <ul class="o-footer_list">
+                    <li class="list_item">
+                        <a class="list_link
+                                  icon-link
+                                  icon-link__external-link"
+                           href="http://usa.gov/">
+                            <span class="icon-link_text">USA.gov</span>
+                        </a>
+                    </li>
+                    <li class="list_item">
+                        <a class="list_link
+                                  icon-link
+                                  icon-link__external-link"
+                           href="http://www.federalreserve.gov/oig/default.htm">
+                            <span class="icon-link_text">Office of Inspector General</span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="o-footer-post">
+            <p class="o-footer_official-website">
+                An official website of the United States Government
+            </p>
+        </div>
+
     </div>
-</main>
-
-<footer role="contentinfo">
-    <!-- Footer stuff -->
 </footer>
 
 <!--
