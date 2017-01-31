@@ -1,6 +1,8 @@
+/* global $*/
+/* eslint no-global-assign: "off"*/
 'use strict';
 
-var $ = global.$ = require( 'jquery' );
+global.$ = require( 'jquery' );
 
 var SCORING = {
   'read-self': {
@@ -60,12 +62,11 @@ $(document).ready(function(){
       var keyval = v.split('=')
       formValues[keyval[0]] = keyval[1]
     })
-    SCORING[formValues['method']][formValues['age']][
+
+    location = '/results.html?' + SCORING[formValues['method']][formValues['age']][
         Object.keys(formValues).filter(function(key){
-          console.log(key)
           return key.indexOf('quest') === 0
         }).reduce(function(a, b){
-          console.log(a,b)
           return a + (+formValues[b])
         }, 0)
       ]
