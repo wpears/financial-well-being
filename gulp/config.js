@@ -82,6 +82,12 @@ module.exports = {
         loc.lib + '/html5shiv/dist/html5shiv-printshiv.min.js'
       ],
       dest: loc.dist + '/static/js/'
+    },
+    onDemand: {
+      src: [
+        loc.src + '/static/css/on-demand/*.css'
+      ],
+      dest: loc.dist + '/static/css/on-demand/'
     }
   }
 };
