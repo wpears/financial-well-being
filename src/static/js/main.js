@@ -3,6 +3,9 @@
 'use strict';
 
 global.$ = require( 'jquery' );
+(function(){
+
+if(location.pathname !== '/' && location.pathname !== '/index.html') return
 
 var SCORING = {
   'read-self': {
@@ -79,3 +82,4 @@ $(document).ready(function(){
     if(QUIZ_COMPLETE) enableSubmit()
   }).each(checkOnBack)
 })
+})()
