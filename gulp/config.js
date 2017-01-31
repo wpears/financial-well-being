@@ -51,10 +51,9 @@ module.exports = {
   },
   scripts: {
     src: [
-      loc.src + '/static/js/main.js'
+      loc.src + '/static/js/*.js'
     ],
-    dest: loc.dist + '/static/js/',
-    name: 'main.js'
+    dest: loc.dist + '/static/js/'
   },
   images: {
     src:  loc.src + '/static/img/**',
