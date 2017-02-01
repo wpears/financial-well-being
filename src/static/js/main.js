@@ -5,7 +5,7 @@
 global.$ = require( 'jquery' );
 (function(){
 
-if(location.pathname !== '/' && location.pathname !== '/index.html') return
+if(location.pathname !== '/' && !location.pathname.match('/index.html')) return
 
 var SCORING = {
   'read-self': {

@@ -2,7 +2,7 @@
 /* eslint no-extra-semi: "off" */
 ;(function(){
 
-if(location.pathname !== '/results.html') return
+if(!location.pathname.match('/results')) return
 
 var AVERAGE = 39
 var HIGH = 64
