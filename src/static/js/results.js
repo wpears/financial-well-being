@@ -9,18 +9,20 @@ var HIGH = 64
 
 var resourcesByScore = [
   {
-    graph: '/improvement.png',
+    graph: 'improvement.png',
     wellBeing: 'Could be improved'
   },
   {
-    graph: '/average.png',
+    graph: 'average.png',
     wellBeing: 'Average'
   },
   {
-    graph: '/high.png',
+    graph: 'high.png',
     wellBeing: 'High'
   }
 ]
+
+var imgPath = window.location.pathname.replace( 'results.html', '' ) + 'static/img/'
 
 function getResourcesByScore(score){
   if(score < AVERAGE) return resourcesByScore[0]
@@ -35,7 +37,7 @@ function loadResources(score, resources){
 
   $(header).text(header.text() + ' ' + score)
   $(blurb).text(blurb.text() + ' ' + resources.wellBeing)
-  graph.attr('src', '/static/img' + resources.graph)
+  graph.attr('src', imgPath + resources.graph)
 }
 
 

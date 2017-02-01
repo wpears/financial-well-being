@@ -5,7 +5,7 @@
 global.$ = require( 'jquery' );
 (function(){
 
-if(location.pathname !== '/' && !location.pathname.match('/index.html')) return
+if ( !document.querySelector( '#submit-quiz' ) ) return
 
 var SCORING = {
   'read-self': {
@@ -60,13 +60,20 @@ $(document).ready(function(){
   $(document).on('submit', function(e){
     e.preventDefault()
     var formValues = {}
+    var pathname = window.location.pathname
+    var resultsPagePath = ''
+    if ( pathname.match( 'index.html' ) ) {
+      resultsPagePath = pathname.replace( 'index.html', 'results.html?' )
+    } else {
+      resultsPagePath = pathname + 'results.html?'
+    }
 
     $('#quiz-form').serialize().split('&').forEach(function(v){
       var keyval = v.split('=')
       formValues[keyval[0]] = keyval[1]
     })
 
-    location = '/results.html?' + SCORING[formValues['method']][formValues['age']][
+    location = resultsPagePath + SCORING[formValues['method']][formValues['age']][
         Object.keys(formValues).filter(function(key){
           return key.indexOf('quest') === 0
         }).reduce(function(a, b){
