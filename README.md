@@ -1,6 +1,6 @@
-# Financial well being scale
+# Financial Well-Being Scale
 
-CFPB financial well-being scale
+A prototype of a web version of the CFPB’s Financial Well-Being Scale.
 
 ![Screenshot](screenshot.png)
 
@@ -18,7 +18,7 @@ CFPB financial well-being scale
 ## Installation
 
 1. Install [Node.js](http://nodejs.org) however you'd like.
-2. Install [Gulp](http://gulpjs.com) and [Bower](http://bower.io):
+2. Install [Gulp](http://gulpjs.com):
   ```bash
   npm install -g gulp bower
   ```
@@ -30,19 +30,14 @@ CFPB financial well-being scale
   `./setup.sh` again. See the [usage](#usage) section on updating all the
   project dependencies.
 
-## Configuration
-
-_If the software is configurable, describe it in detail,
-either here or in other documentation to which you link._
-
 ## Usage
 
 Each time you fetch from the upstream repository (this repo), run `./setup.sh`.
 This setup script will remove and re-install the project dependencies and
 rebuild the site's JavaScript and CSS assets.
 
-To watch for changes in the source code and automatically update the running site,
-open a terminal and run:
+To watch for changes in the source code and automatically update the running
+site, open a terminal and run:
 
 ```bash
 gulp watch
@@ -57,15 +52,28 @@ Alternatively, you may want to use a local server with something like
 
 ## Known issues
 
-_Document any known significant shortcomings with the software._
+This prototype was done for a one-day make-a-thon, so it’s still rough. Here are
+some things that need to be addressed to turn this into a final product:
 
-## Getting help
-
-_Instruct users how to get help with this software; this might include links
-to an issue tracker, wiki, mailing list, etc._
-
-Use the issue tracker to follow the development conversation.
-If you find a bug not listed in the issue tracker, please file a bug report.
+- With the exception of the questions themselves, all the content was whipped up
+by the make-a-thon team and needs to be reviewed and rewritten.
+- The hero illustration is a placeholder and should be replaced.
+- The “Ver página en español” link is meant to link to the Spanish version of
+the scale (which exists on paper).
+- All of the questions are required. Right now, form submission is disabled
+until all questions are answered, but that should be changed to use our standard
+error messaging.
+- The scale questions are looking pretty good on large screens, but on small
+screens they’re meant to transform to our standard large-target-area radio
+buttons (like the last two questions).
+- The scale questions aren’t currently in Capital Framework (and the HTML/CSS
+used for them in this prototype is pretty hack-y).
+- The paper version of the scale has some additional prompts that go along with
+the scale points that we weren’t able to accommodate with our current scale
+question style. We might want to look into reworking the scale question style
+to be able to include those prompts.
+- None of the score calculations have tests yet.
+- The content of the results page is meant to change based on your score.
 
 ## Getting involved
 
@@ -92,5 +100,5 @@ which is the front-end pattern library used in this project.
 
 1. Projects that inspired you
 2. Related projects
-3. Books, papers, talks, or other sources that have meaniginful impact or
+3. Books, papers, talks, or other sources that have meaningful impact or
    influence on this project
